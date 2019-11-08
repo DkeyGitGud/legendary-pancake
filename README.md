@@ -1,4 +1,4 @@
 # legendary-pancake
-glorious place for my upcoming amazing games
+glorious place for our upcoming amazing game
 
-great games... so so games... yeah 
+great game... so so game... yeah 
