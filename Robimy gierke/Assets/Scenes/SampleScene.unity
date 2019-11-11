@@ -1613,5 +1613,11 @@ PrefabInstance:
       propertyPath: effectSpawnRate
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 355288240250461035, guid: 042861453a89d1745b0fe98973cdb018,
+        type: 3}
+      propertyPath: MuzzleFlashPrefab
+      value: 
+      objectReference: {fileID: 1882824303053625662, guid: f0c942f8442a5d342bd108752268b713,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 042861453a89d1745b0fe98973cdb018, type: 3}
