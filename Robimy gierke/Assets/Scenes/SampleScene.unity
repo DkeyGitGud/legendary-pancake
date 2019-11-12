@@ -934,6 +934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1016627037}
   - component: {fileID: 1016627038}
+  - component: {fileID: 1016627039}
   m_Layer: 5
   m_Name: WaveUI
   m_TagString: Untagged
@@ -981,6 +982,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1016627039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016627036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca55cdf5bd05a9b43b10599e91c22921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1126222218
 GameObject:
   m_ObjectHideFlags: 0
