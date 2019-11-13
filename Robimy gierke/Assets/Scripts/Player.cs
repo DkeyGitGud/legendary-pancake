@@ -27,6 +27,11 @@ public class Player : MonoBehaviour
 
     public int fallBoundary = -20;
 
+    public string deathSoundName = "DeathVoice";
+    public string damageSoundName = "Grunt";
+
+    private AudioManager audioManager;
+
     [SerializeField]
     private StatusIndicator statusIndicator;
 
@@ -41,6 +46,12 @@ public class Player : MonoBehaviour
         else
         {
             statusIndicator.SetHealth(stats.curHealth, stats.maxHealth);
+        }
+
+        audioManager = AudioManager.instance;
+        if (audioManager == null)
+        {
+            Debug.LogError("PANIC! No audiomanager in scene.");
         }
     }
 
@@ -57,7 +68,16 @@ public class Player : MonoBehaviour
         stats.curHealth -= damage;
         if (stats.curHealth <= 0)
         {
+            //play death sound
+            audioManager.PlaySound(deathSoundName);
+            
+            //kill player
             GameMaster.KillPlayer(this);
+        }
+        else
+        {
+            //play damage sound
+            audioManager.PlaySound(damageSoundName);
         }
 
         statusIndicator.SetHealth(stats.curHealth, stats.maxHealth);
