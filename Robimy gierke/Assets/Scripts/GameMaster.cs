@@ -43,6 +43,9 @@ public class GameMaster : MonoBehaviour
     [SerializeField]
     private GameObject upgradeMenu;
 
+    [SerializeField]
+    private WaveSpawner waveSpawner;
+
     public delegate void UpgradeMenuCallback(bool active);
     public UpgradeMenuCallback onToggleUpgradeMenu;
 
@@ -79,6 +82,7 @@ public class GameMaster : MonoBehaviour
     private void ToggleUpgradeMenu()
     {
         upgradeMenu.SetActive(!upgradeMenu.activeSelf);
+        waveSpawner.enabled = !upgradeMenu.activeSelf;
         onToggleUpgradeMenu.Invoke(upgradeMenu.activeSelf);
     }
 
@@ -125,7 +129,11 @@ public class GameMaster : MonoBehaviour
     {
         // Let's play some sound
         audioManager.PlaySound(_enemy.deathSoundName);
-        
+
+        // Gain some money
+        Money += _enemy.moneyDrop;
+        audioManager.PlaySound("Money");
+
         // Add particles
         GameObject _clone = Instantiate(_enemy.deathParticles.gameObject, _enemy.transform.position, Quaternion.identity) as GameObject;
         Destroy(_clone, 5f);

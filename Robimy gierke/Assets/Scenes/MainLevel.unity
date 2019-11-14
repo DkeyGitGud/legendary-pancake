@@ -427,7 +427,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: UPGRADE
+  m_Text: UPGRADE (50)
 --- !u!222 &260640969
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1619,7 +1619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  healthRegenRate: 2
+  healthRegenRate: 5
   movementSpeed: 10
 --- !u!1 &1016627036
 GameObject:
@@ -1749,9 +1749,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthText: {fileID: 1770362292}
+  speedText: {fileID: 591539152}
   healthMultiplier: 1.3
   movementMultiplier: 1.3
-  speedText: {fileID: 591539152}
+  upgradeCost: 50
 --- !u!1 &1050706577
 GameObject:
   m_ObjectHideFlags: 0
@@ -3945,7 +3946,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: UPGRADE
+  m_Text: UPGRADE (50)
 --- !u!222 &1868230790
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4781,6 +4782,71 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6591479402940467566, guid: 09356287b9ed7ad44961103676101e27,
+        type: 3}
+      propertyPath: sounds.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6591479402940467566, guid: 09356287b9ed7ad44961103676101e27,
+        type: 3}
+      propertyPath: sounds.Array.data[11].name
+      value: NoMoney
+      objectReference: {fileID: 0}
+    - target: {fileID: 6591479402940467566, guid: 09356287b9ed7ad44961103676101e27,
+        type: 3}
+      propertyPath: sounds.Array.data[11].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: b518b5bf3e3b94b46a2323a1c9b0c656, type: 3}
+    - target: {fileID: 6591479402940467566, guid: 09356287b9ed7ad44961103676101e27,
+        type: 3}
+      propertyPath: sounds.Array.data[11].volume
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6591479402940467566, guid: 09356287b9ed7ad44961103676101e27,
+        type: 3}
+      propertyPath: sounds.Array.data[11].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6591479402940467566, guid: 09356287b9ed7ad44961103676101e27,
+        type: 3}
+      propertyPath: sounds.Array.data[11].randomVolume
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6591479402940467566, guid: 09356287b9ed7ad44961103676101e27,
+        type: 3}
+      propertyPath: sounds.Array.data[11].randomPitch
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6591479402940467566, guid: 09356287b9ed7ad44961103676101e27,
+        type: 3}
+      propertyPath: sounds.Array.data[12].name
+      value: Money
+      objectReference: {fileID: 0}
+    - target: {fileID: 6591479402940467566, guid: 09356287b9ed7ad44961103676101e27,
+        type: 3}
+      propertyPath: sounds.Array.data[12].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9bb18eedaee0f6c429fd94ac0c5b33a3, type: 3}
+    - target: {fileID: 6591479402940467566, guid: 09356287b9ed7ad44961103676101e27,
+        type: 3}
+      propertyPath: sounds.Array.data[12].volume
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6591479402940467566, guid: 09356287b9ed7ad44961103676101e27,
+        type: 3}
+      propertyPath: sounds.Array.data[12].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6591479402940467566, guid: 09356287b9ed7ad44961103676101e27,
+        type: 3}
+      propertyPath: sounds.Array.data[12].randomVolume
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6591479402940467566, guid: 09356287b9ed7ad44961103676101e27,
+        type: 3}
+      propertyPath: sounds.Array.data[12].randomPitch
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09356287b9ed7ad44961103676101e27, type: 3}
 --- !u!1001 &5343862926120164638
@@ -4987,6 +5053,11 @@ PrefabInstance:
       propertyPath: startingMoney
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 6112698891122408658, guid: 76237a5853c73ab46b1365219d666896,
+        type: 3}
+      propertyPath: waveSpawner
+      value: 
+      objectReference: {fileID: 950665663}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76237a5853c73ab46b1365219d666896, type: 3}
 --- !u!1001 &9177552179918879777
