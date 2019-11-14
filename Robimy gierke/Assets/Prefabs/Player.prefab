@@ -627,8 +627,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94e31559a80f50547bf2e19cbdf528a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireRate: 60
-  Damage: 10
+  fireRate: 20
+  Damage: 30
   whatToHit:
     serializedVersion: 2
     m_Bits: 1587
@@ -641,6 +641,7 @@ MonoBehaviour:
   effectSpawnRate: 10
   camShakeAmount: 0.05
   camShakeLength: 0.1
+  weaponShootSound: DefaultShot
 --- !u!1 &9177552181051566204
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,6 +760,7 @@ MonoBehaviour:
   m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 4294967295
+  landingSoundName: LandingFootsteps
 --- !u!114 &9177552181051566144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -861,4 +863,6 @@ MonoBehaviour:
   stats:
     maxHealth: 100
   fallBoundary: -20
+  deathSoundName: DeathVoice
+  damageSoundName: Grunt
   statusIndicator: {fileID: 9177552180826342204}
