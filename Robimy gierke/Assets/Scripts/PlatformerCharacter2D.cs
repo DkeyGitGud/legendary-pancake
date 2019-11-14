@@ -25,6 +25,8 @@ namespace UnityStandardAssets._2D
 
         Transform playerGraphics;           // Reference to the graphics so we can change direction
 
+        AudioManager audioManager;
+
         private void Awake()
         {
             // Setting up references.
@@ -39,12 +41,20 @@ namespace UnityStandardAssets._2D
             }
         }
 
+        private void Start()
+        {
+            audioManager = AudioManager.instance;
+            if(audioManager == null)
+            {
+                Debug.LogError("THIS IS WHY WE WRITE ERROR MESSAGES: No audiomanager found.");
+            }
+        }
+
+        private bool wasGrounded = false;
 
         private void FixedUpdate()
         {
             m_Grounded = false;
-
-            bool wasGrounded = m_Grounded;
 
             // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
             // This can be done using layers instead but Sample Assets will not overwrite your project settings.
@@ -54,12 +64,19 @@ namespace UnityStandardAssets._2D
                 if (colliders[i].gameObject != gameObject)
                     m_Grounded = true;
             }
+
+            if(!m_Grounded && !wasGrounded)
+            {
+                wasGrounded = true;
+            }
+
             m_Anim.SetBool("Ground", m_Grounded);
 
-            /*if(wasGrounded!=m_Grounded && m_Grounded == true)
+            if (m_Grounded && wasGrounded)
             {
-
-            }*/
+                wasGrounded = false;
+                audioManager.PlaySound(landingSoundName);
+            }
 
             // Set the vertical animation
             m_Anim.SetFloat("vSpeed", m_Rigidbody2D.velocity.y);
