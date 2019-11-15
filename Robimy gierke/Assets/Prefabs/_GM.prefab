@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6112698891122408663
+--- !u!1 &6989677627837833831
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6112698891122408656}
-  - component: {fileID: 6112698891122408657}
-  - component: {fileID: 6112698891122408658}
+  - component: {fileID: 6989677627837833824}
+  - component: {fileID: 4145645181191247955}
+  - component: {fileID: 5953812445655698036}
+  - component: {fileID: 6989677627837833826}
+  - component: {fileID: 6989677627837833827}
+  - component: {fileID: 6989677627837833757}
   m_Layer: 0
   m_Name: _GM
   m_TagString: GM
@@ -18,27 +21,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6112698891122408656
+--- !u!4 &6989677627837833824
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6112698891122408663}
+  m_GameObject: {fileID: 6989677627837833831}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.358391, y: 2.105267, z: -13.597656}
+  m_LocalPosition: {x: 5.358391, y: 2.105267, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 6989677629347650576}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6112698891122408657
+--- !u!114 &4145645181191247955
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6112698891122408663}
+  m_GameObject: {fileID: 6989677627837833831}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49f18679f5bc3964bab6798aa34b38c5, type: 3}
@@ -49,15 +53,118 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   smoothing: 1.2
---- !u!114 &6112698891122408658
+--- !u!114 &5953812445655698036
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6112698891122408663}
+  m_GameObject: {fileID: 6989677627837833831}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0333eb64ec435f24abe342f992838026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxLives: 3
+  startingMoney: 100
+  playerPrefab: {fileID: 9177552179389600683, guid: 66ba42ad892f30d44ac98ac950834b41,
+    type: 3}
+  spawnPoint: {fileID: 6989677629347650576}
+  spawnDelay: 3
+  spawnPrefab: {fileID: 7861477662535151361, guid: 35be386f0b2b4f649b2a49f529138881,
+    type: 3}
+  respawnCountdownSoundName: RespawnCountdown
+  spawnSoundName: Spawn
+  gameOverSoundName: GameOver
+  cameraShake: {fileID: 6989677627837833826}
+  gameOverUI: {fileID: 0}
+  upgradeMenu: {fileID: 0}
+  waveSpawner: {fileID: 6989677627837833827}
+--- !u!114 &6989677627837833826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6989677627837833831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed93f01182bf1744983696e556e63e9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCam: {fileID: 0}
+--- !u!114 &6989677627837833827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6989677627837833831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34a7d54343b818044a825b10be674c03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waves:
+  - name: Alien Invasion
+    enemy: {fileID: 1587712963202481890, guid: 4a58c73d94833144e8150ffa06161130, type: 3}
+    count: 2
+    rate: 1
+  - name: Alien Invasion 2.0
+    enemy: {fileID: 1587712963202481890, guid: 4a58c73d94833144e8150ffa06161130, type: 3}
+    count: 3
+    rate: 1.5
+  - name: Run while you CAN!
+    enemy: {fileID: 1587712963202481890, guid: 4a58c73d94833144e8150ffa06161130, type: 3}
+    count: 5
+    rate: 2
+  spawnPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  timeBetweenWaves: 3
+--- !u!114 &6989677627837833757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6989677627837833831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b08007ded069fa745a1329a6f1a74a6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  healthRegenRate: 5
+  movementSpeed: 10
+--- !u!1 &6989677629347650583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6989677629347650576}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6989677629347650576
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6989677629347650583}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.9383907, y: -0.36526704, z: -1.0873861}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6989677627837833824}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
