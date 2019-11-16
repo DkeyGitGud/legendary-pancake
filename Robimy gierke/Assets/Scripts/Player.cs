@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets._2D;
@@ -10,6 +11,11 @@ public class Player : MonoBehaviour
 
     public string deathSoundName = "DeathVoice";
     public string damageSoundName = "Grunt";
+
+    internal void DamagePlayer(object damage)
+    {
+        throw new NotImplementedException();
+    }
 
     private AudioManager audioManager;
 

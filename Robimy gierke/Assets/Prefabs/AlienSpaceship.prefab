@@ -302,8 +302,7 @@ MonoBehaviour:
     damage: 40
   deathParticles: {fileID: 5778225806220736475, guid: 2e4fdc58ab118bd48a25ce3ce3628da0,
     type: 3}
-  itemDrop: {fileID: 8940363362117798497, guid: 96c3ea1ead2fa8b42bb1f66038c296dc,
-    type: 3}
+  loot: {fileID: 8940363362117798497, guid: 96c3ea1ead2fa8b42bb1f66038c296dc, type: 3}
   shakeAmount: 0.1
   shakeLength: 0.1
   deathSoundName: Explosion

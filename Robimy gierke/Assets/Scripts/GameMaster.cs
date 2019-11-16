@@ -139,7 +139,10 @@ public class GameMaster : MonoBehaviour
         Destroy(_clone, 5f);
 
         // Drop loot
-        GameObject _item_clone = Instantiate(_enemy.itemDrop.gameObject, _enemy.transform.position, Quaternion.identity) as GameObject;
+        GameObject _loot_clone = Instantiate(_enemy.loot.gameObject, _enemy.transform.position, Quaternion.identity) as GameObject;
+        
+        // Pick up loot when player collides with loot
+
 
         // Go camerashake
         cameraShake.Shake(_enemy.shakeAmount, _enemy.shakeLength);

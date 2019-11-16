@@ -29,7 +29,7 @@ public class Enemy : MonoBehaviour
 
     public Transform deathParticles;
 
-    public Transform itemDrop;
+    public Transform loot;
 
     public float shakeAmount = 0.1f;
     public float shakeLength = 0.1f;
