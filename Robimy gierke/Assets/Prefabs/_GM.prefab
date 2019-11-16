@@ -67,7 +67,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxLives: 3
   startingMoney: 100
-  playerPrefab: {fileID: 9177552179389600683, guid: 66ba42ad892f30d44ac98ac950834b41,
+  playerPrefab: {fileID: 589770455774883729, guid: 66ba42ad892f30d44ac98ac950834b41,
     type: 3}
   spawnPoint: {fileID: 6989677629347650576}
   spawnDelay: 3

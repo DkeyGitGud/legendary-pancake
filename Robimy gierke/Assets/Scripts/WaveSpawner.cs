@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour
 {
@@ -109,8 +110,14 @@ public class WaveSpawner : MonoBehaviour
         return true;
     }
 
+    [SerializeField]
+    Text waveNameText;
+
     IEnumerator SpawnWave (Wave _wave)
     {
+        // Odwolanie do WaveUI?
+        waveNameText.text = _wave.name;
+
         Debug.Log("Spawning Wave: " + _wave.name);
         state = SpawnState.SPAWNING;
 

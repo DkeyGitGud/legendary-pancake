@@ -82,6 +82,8 @@ public class WaveUI : MonoBehaviour
 
             waveCountText.text = spawner.NextWave.ToString();
 
+            //waveNameText.text = spawner.name.ToString();
+
             Debug.Log("SPAWNING");
         }
     }
