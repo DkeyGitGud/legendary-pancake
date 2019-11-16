@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1587712962699659381}
   - component: {fileID: 1587712962699659380}
   - component: {fileID: 1587712962699659383}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: StatusIndicator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -319,7 +319,7 @@ GameObject:
   - component: {fileID: 1587712963608547118}
   - component: {fileID: 1587712963608547104}
   - component: {fileID: 1587712963608547119}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -392,7 +392,7 @@ GameObject:
   - component: {fileID: 1587712964241086579}
   - component: {fileID: 1587712964241086581}
   - component: {fileID: 1587712964241086580}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: HealthText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
