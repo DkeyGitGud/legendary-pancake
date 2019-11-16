@@ -87,6 +87,9 @@ public class WaveSpawner : MonoBehaviour
         if(nextWave +1 > waves.Length - 1)
         {
             nextWave = 0;
+
+            // Koniec gry --> gra ukończona / przejście do nowego poziomu
+            GameMaster.gm.FinishGame();
             Debug.Log("ALL WAVES COMPLETE! Looping...");
         }
         else

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameMaster : MonoBehaviour
 {
@@ -92,6 +93,15 @@ public class GameMaster : MonoBehaviour
 
         Debug.Log("GAME OVER");
         gameOverUI.SetActive(true);
+    }
+
+    public void FinishGame()
+    {
+        // You are the champion !!! sound
+        //audioManager.PlaySound(gameOverSoundName);
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
     }
 
     public IEnumerator _RespawnPlayer()
