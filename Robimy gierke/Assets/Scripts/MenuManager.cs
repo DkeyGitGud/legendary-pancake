@@ -38,5 +38,6 @@ public class MenuManager : MonoBehaviour
     public void OnMouseOver()
     {
         audioManager.PlaySound(hoverOverSound);
+        Debug.Log("WE GO TO INTRO");
     }
 }
