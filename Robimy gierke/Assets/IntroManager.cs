@@ -20,6 +20,10 @@ public class IntroManager : MonoBehaviour
         {
             Debug.Log("WYCHODZIMY DO GRY");
 
+            audioManager.StopSound("CalmMusic");
+
+            audioManager.PlaySound("FightingMusic");
+
             SceneManager.LoadScene("MainLevel");
         }
     }

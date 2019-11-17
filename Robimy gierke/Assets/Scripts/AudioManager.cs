@@ -72,6 +72,8 @@ public class AudioManager : MonoBehaviour
             sounds[i].SetSource(_go.AddComponent<AudioSource>());
         }
 
+        StopSound("EpicMusic");
+
         PlaySound("CalmMusic");
     }
 

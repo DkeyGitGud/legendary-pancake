@@ -98,10 +98,10 @@ public class GameMaster : MonoBehaviour
     public void FinishGame()
     {
         // Stop Fighting Music
-        audioManager.StopSound("CalmMusic");
+        audioManager.StopSound("FightingMusic");
 
         // Play Epic Music
-        audioManager.PlaySound("FightingMusic");
+        audioManager.PlaySound("EpicMusic");
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 

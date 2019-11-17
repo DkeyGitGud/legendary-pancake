@@ -142,3 +142,10 @@ MonoBehaviour:
     randomVolume: 0
     randomPitch: 0
     loop: 0
+  - name: EpicMusic
+    clip: {fileID: 8300000, guid: 7fe066bdf49cc9c4c814f33c67977822, type: 3}
+    volume: 0.35
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0
+    loop: 0
