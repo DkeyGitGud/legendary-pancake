@@ -51,9 +51,9 @@ MonoBehaviour:
     randomVolume: 0
     randomPitch: 0
     loop: 0
-  - name: Music
-    clip: {fileID: 8300000, guid: 9549a7b3a32ebe24f81adf3618d4138a, type: 3}
-    volume: 0.4
+  - name: CalmMusic
+    clip: {fileID: 8300000, guid: e95b6d8bc99c5d546a4af93dc91bcccd, type: 3}
+    volume: 0.3
     pitch: 1
     randomVolume: 0
     randomPitch: 0
@@ -134,4 +134,11 @@ MonoBehaviour:
     pitch: 1
     randomVolume: 0.2
     randomPitch: 0.1
+    loop: 0
+  - name: FightingMusic
+    clip: {fileID: 8300000, guid: 0a2bc77bbb2d13547acdedc2399bbc15, type: 3}
+    volume: 0.4
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0
     loop: 0

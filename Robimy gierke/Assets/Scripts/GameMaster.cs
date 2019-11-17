@@ -97,8 +97,11 @@ public class GameMaster : MonoBehaviour
 
     public void FinishGame()
     {
-        // You are the champion !!! sound
-        //audioManager.PlaySound(gameOverSoundName);
+        // Stop Fighting Music
+        audioManager.StopSound("CalmMusic");
+
+        // Play Epic Music
+        audioManager.PlaySound("FightingMusic");
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
