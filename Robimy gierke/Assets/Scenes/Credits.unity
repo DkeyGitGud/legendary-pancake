@@ -1658,18 +1658,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "MUSIC:\n\nMusic from https://filmmusic.io\r\n\"Lobby Time\" by Kevin MacLeod
-    (https://incompetech.com)\r\nLicense: CC BY (http://creativecommons.org/licenses/by/4.0/)\n\nMusic
-    from https://filmmusic.io\r\n\"Surf Shimmy\" by Kevin MacLeod (https://incompetech.com)\r\nLicense:
-    CC BY (http://creativecommons.org/licenses/by/4.0/)\n\nMUSIC:\n\nMusic from https://filmmusic.io\r\n\"Lobby
-    Time\" by Kevin MacLeod (https://incompetech.com)\r\nLicense: CC BY (http://creativecommons.org/licenses/by/4.0/)\n\nMusic
-    from https://filmmusic.io\r\n\"Surf Shimmy\" by Kevin MacLeod (https://incompetech.com)\r\nLicense:
-    CC BY (http://creativecommons.org/licenses/by/4.0/)\n\nMUSIC:\n\nMusic from https://filmmusic.io\r\n\"Lobby
-    Time\" by Kevin MacLeod (https://incompetech.com)\r\nLicense: CC BY (http://creativecommons.org/licenses/by/4.0/)\n\nMusic
-    from https://filmmusic.io\r\n\"Surf Shimmy\" by Kevin MacLeod (https://incompetech.com)\r\nLicense:
-    CC BY (http://creativecommons.org/licenses/by/4.0/)\n\nMUSIC:\n\nMusic from https://filmmusic.io\r\n\"Lobby
-    Time\" by Kevin MacLeod (https://incompetech.com)\r\nLicense: CC BY (http://creativecommons.org/licenses/by/4.0/)\n\nMusic
-    from https://filmmusic.io\r\n\"Surf Shimmy\" by Kevin MacLeod (https://incompetech.com)\r\nLicense:
+  m_Text: "DESIGN:\n\nDariusz Kapustka\nRafa\u0142 Pakulski\n\nStory: Piotr Jaszczur\n\n\nPROGRAMMING:\n\nCoding
+    by\nDariusz Kapustka\n\nUsing tutorials from\nwww.youtube.com/brackeys\n\nAI Programming
+    using: A* Pathing Algorithm\n\nGRAPHICS:\n\nRafa\u0142 Pakulski\n\n\nMUSIC:\n\nMusic
+    from https://filmmusic.io\r\n\"Lobby Time\" by Kevin MacLeod (https://incompetech.com)\r\nLicense:
+    CC BY (http://creativecommons.org/licenses/by/4.0/)\n\nMusic from https://filmmusic.io\r\n\"Surf
+    Shimmy\" by Kevin MacLeod (https://incompetech.com)\r\nLicense: CC BY (http://creativecommons.org/licenses/by/4.0/)\n\nMusic
+    from https://filmmusic.io\r\n\"Disco con Tutti\" by Kevin MacLeod (https://incompetech.com)\r\nLicense:
     CC BY (http://creativecommons.org/licenses/by/4.0/)"
 --- !u!222 &1964265686
 CanvasRenderer:
@@ -1803,51 +1798,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6730537335874809416, guid: 09356287b9ed7ad44961103676101e27,
-        type: 3}
-      propertyPath: sounds.Array.size
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 6730537335874809416, guid: 09356287b9ed7ad44961103676101e27,
-        type: 3}
-      propertyPath: sounds.Array.data[13].name
-      value: CalmMusic
-      objectReference: {fileID: 0}
-    - target: {fileID: 6730537335874809416, guid: 09356287b9ed7ad44961103676101e27,
-        type: 3}
-      propertyPath: sounds.Array.data[13].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: e95b6d8bc99c5d546a4af93dc91bcccd, type: 3}
-    - target: {fileID: 6730537335874809416, guid: 09356287b9ed7ad44961103676101e27,
-        type: 3}
-      propertyPath: sounds.Array.data[13].volume
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6730537335874809416, guid: 09356287b9ed7ad44961103676101e27,
-        type: 3}
-      propertyPath: sounds.Array.data[13].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6730537335874809416, guid: 09356287b9ed7ad44961103676101e27,
-        type: 3}
-      propertyPath: sounds.Array.data[13].randomVolume
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6730537335874809416, guid: 09356287b9ed7ad44961103676101e27,
-        type: 3}
-      propertyPath: sounds.Array.data[13].randomPitch
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6730537335874809416, guid: 09356287b9ed7ad44961103676101e27,
-        type: 3}
-      propertyPath: sounds.Array.data[1].name
-      value: FightingMusic
-      objectReference: {fileID: 0}
-    - target: {fileID: 6730537335874809416, guid: 09356287b9ed7ad44961103676101e27,
-        type: 3}
-      propertyPath: sounds.Array.data[1].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 0a2bc77bbb2d13547acdedc2399bbc15, type: 3}
     - target: {fileID: 8254000381782685068, guid: 09356287b9ed7ad44961103676101e27,
         type: 3}
       propertyPath: m_Name
@@ -1906,6 +1856,76 @@ PrefabInstance:
     - target: {fileID: 8822412653900794817, guid: 09356287b9ed7ad44961103676101e27,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6730537335874809416, guid: 09356287b9ed7ad44961103676101e27,
+        type: 3}
+      propertyPath: sounds.Array.size
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6730537335874809416, guid: 09356287b9ed7ad44961103676101e27,
+        type: 3}
+      propertyPath: sounds.Array.data[13].name
+      value: CalmMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 6730537335874809416, guid: 09356287b9ed7ad44961103676101e27,
+        type: 3}
+      propertyPath: sounds.Array.data[13].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: e95b6d8bc99c5d546a4af93dc91bcccd, type: 3}
+    - target: {fileID: 6730537335874809416, guid: 09356287b9ed7ad44961103676101e27,
+        type: 3}
+      propertyPath: sounds.Array.data[13].volume
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6730537335874809416, guid: 09356287b9ed7ad44961103676101e27,
+        type: 3}
+      propertyPath: sounds.Array.data[13].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6730537335874809416, guid: 09356287b9ed7ad44961103676101e27,
+        type: 3}
+      propertyPath: sounds.Array.data[13].randomVolume
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6730537335874809416, guid: 09356287b9ed7ad44961103676101e27,
+        type: 3}
+      propertyPath: sounds.Array.data[13].randomPitch
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6730537335874809416, guid: 09356287b9ed7ad44961103676101e27,
+        type: 3}
+      propertyPath: sounds.Array.data[1].name
+      value: FightingMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 6730537335874809416, guid: 09356287b9ed7ad44961103676101e27,
+        type: 3}
+      propertyPath: sounds.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0a2bc77bbb2d13547acdedc2399bbc15, type: 3}
+    - target: {fileID: 6730537335874809416, guid: 09356287b9ed7ad44961103676101e27,
+        type: 3}
+      propertyPath: sounds.Array.data[14].name
+      value: EpicMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 6730537335874809416, guid: 09356287b9ed7ad44961103676101e27,
+        type: 3}
+      propertyPath: sounds.Array.data[14].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7fe066bdf49cc9c4c814f33c67977822, type: 3}
+    - target: {fileID: 6730537335874809416, guid: 09356287b9ed7ad44961103676101e27,
+        type: 3}
+      propertyPath: sounds.Array.data[14].volume
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 6730537335874809416, guid: 09356287b9ed7ad44961103676101e27,
+        type: 3}
+      propertyPath: sounds.Array.data[14].randomVolume
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6730537335874809416, guid: 09356287b9ed7ad44961103676101e27,
+        type: 3}
+      propertyPath: sounds.Array.data[14].randomPitch
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

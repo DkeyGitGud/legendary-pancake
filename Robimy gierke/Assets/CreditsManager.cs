@@ -20,6 +20,8 @@ public class CreditsManager : MonoBehaviour
         {
             Debug.Log("WYCHODZIMY DO POCZĄTKU");
 
+            audioManager.StopSound("EpicMusic");
+
             SceneManager.LoadScene("MainMenu");
         }
     }

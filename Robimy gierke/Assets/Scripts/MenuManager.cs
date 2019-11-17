@@ -18,6 +18,8 @@ public class MenuManager : MonoBehaviour
         {
             Debug.LogError("No audiomanager found!");
         }
+
+        audioManager.PlaySound("CalmMusic");
     }
 
     public void StartGame()

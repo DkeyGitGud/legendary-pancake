@@ -74,7 +74,7 @@ public class AudioManager : MonoBehaviour
 
         StopSound("EpicMusic");
 
-        PlaySound("CalmMusic");
+        //PlaySound("CalmMusic");
     }
 
     public void PlaySound(string _name)

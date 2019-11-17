@@ -19,6 +19,7 @@ public class OutroManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("WYCHODZIMY DO CREDITSOW");
+            audioManager.StopSound("FightingMusic");
 
             SceneManager.LoadScene("Credits");
         }
