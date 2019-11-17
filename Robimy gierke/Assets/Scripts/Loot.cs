@@ -25,6 +25,9 @@ public class Loot : MonoBehaviour
         {
             Destroy(loot.gameObject);
 
+            // Gain some money
+            GameMaster.Money += (int)(Random.Range(0.5f,1f)*10);
+
             audioManager.PlaySound("Money");
         }
     }

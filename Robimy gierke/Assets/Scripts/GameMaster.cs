@@ -144,8 +144,8 @@ public class GameMaster : MonoBehaviour
         audioManager.PlaySound(_enemy.deathSoundName);
 
         // Gain some money
-        Money += _enemy.moneyDrop;
-        audioManager.PlaySound("Money");
+        //Money += _enemy.moneyDrop;
+        //audioManager.PlaySound("Money");
 
         // Add particles
         GameObject _clone = Instantiate(_enemy.deathParticles.gameObject, _enemy.transform.position, Quaternion.identity) as GameObject;
@@ -153,10 +153,8 @@ public class GameMaster : MonoBehaviour
 
         // Drop loot
         GameObject _loot_clone = Instantiate(_enemy.loot.gameObject, _enemy.transform.position, Quaternion.identity) as GameObject;
+        Destroy(_loot_clone, 5f);
         
-        // Pick up loot when player collides with loot
-
-
         // Go camerashake
         cameraShake.Shake(_enemy.shakeAmount, _enemy.shakeLength);
         Destroy(_enemy.gameObject);
