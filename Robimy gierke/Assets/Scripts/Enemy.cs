@@ -84,7 +84,7 @@ public class Enemy : MonoBehaviour
         if (_player != null)
         {
             _player.DamagePlayer(stats.damage);
-            DamageEnemy(9999999);
+            //DamageEnemy(9999999);
         }
     }
 
