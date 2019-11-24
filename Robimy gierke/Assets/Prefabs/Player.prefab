@@ -789,6 +789,8 @@ MonoBehaviour:
   deathSoundName: DeathVoice
   damageSoundName: Grunt
   statusIndicator: {fileID: 6186415287341863458}
+  damageParticles: {fileID: 8025839555383477568, guid: 722826d84e0e1954fa6253dac3aa04df,
+    type: 3}
 --- !u!1 &7081440380379310611
 GameObject:
   m_ObjectHideFlags: 0

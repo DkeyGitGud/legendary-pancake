@@ -26,6 +26,8 @@ public class Player : MonoBehaviour
 
     private PlayerStats stats;
 
+    public Transform damageParticles;
+
     private void Start()
     {
         stats = PlayerStats.instance;
@@ -82,7 +84,8 @@ public class Player : MonoBehaviour
     public void DamagePlayer (int damage)
     {
 
-        
+        GameObject _clone = Instantiate(this.damageParticles.gameObject, this.transform.position, Quaternion.identity) as GameObject;
+        Destroy(_clone, 3f);
 
         stats.curHealth -= damage;
         if (stats.curHealth <= 0)
