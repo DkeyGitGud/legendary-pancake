@@ -784,6 +784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adcf4d1ee1d1f8d4fb6ca4d56b74bfb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  czerwony: {fileID: 21300000, guid: c521e555f31909648a75d1dc0d38bec3, type: 3}
   fallBoundary: -20
   deathSoundName: DeathVoice
   damageSoundName: Grunt

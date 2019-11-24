@@ -28,6 +28,7 @@ public class GameMaster : MonoBehaviour
     }
 
     public Transform playerPrefab;
+    public Sprite czerwony;
     public Transform spawnPoint;
     public float spawnDelay = 2;
     public Transform spawnPrefab;

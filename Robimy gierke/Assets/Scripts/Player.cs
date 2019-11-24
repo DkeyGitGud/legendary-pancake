@@ -7,6 +7,8 @@ using UnityStandardAssets._2D;
 [RequireComponent(typeof(Platformer2DUserControl))]
 public class Player : MonoBehaviour
 {
+    public Sprite czerwony;
+
     public int fallBoundary = -20;
 
     public string deathSoundName = "DeathVoice";
@@ -79,6 +81,9 @@ public class Player : MonoBehaviour
 
     public void DamagePlayer (int damage)
     {
+
+        
+
         stats.curHealth -= damage;
         if (stats.curHealth <= 0)
         {

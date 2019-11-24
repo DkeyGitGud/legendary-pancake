@@ -5,6 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(EnemyAI))]
 public class Enemy : MonoBehaviour
 {
+    public Sprite czerwony;
+
     [System.Serializable]
     public class EnemyStats
     {
@@ -84,6 +86,9 @@ public class Enemy : MonoBehaviour
         if (_player != null)
         {
             _player.DamagePlayer(stats.damage);
+            czerwony = GameMaster.gm.playerPrefab.GetComponent<Sprite>();
+           
+            
             //DamageEnemy(9999999);
         }
     }
