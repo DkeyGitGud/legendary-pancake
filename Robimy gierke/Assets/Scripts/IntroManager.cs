@@ -16,7 +16,7 @@ public class IntroManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetButtonDown("Fire1"))
         {
             Debug.Log("WYCHODZIMY DO GRY");
 
