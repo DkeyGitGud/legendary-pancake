@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7422765575471234928}
   - component: {fileID: 3314635067521545381}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: pngkit_garbage-bag-png_7779407
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 8940363362117798502}
   - component: {fileID: 8940363362117798501}
   - component: {fileID: 5125678315615234841}
-  m_Layer: 8
+  m_Layer: 12
   m_Name: DropFromEnemies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
