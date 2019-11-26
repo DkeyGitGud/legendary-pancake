@@ -390,7 +390,7 @@ GameObject:
   m_Component:
   - component: {fileID: 102436606}
   m_Layer: 0
-  m_Name: FaunaIFlora
+  m_Name: FaunaIFloraIPrzedmioty
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -697,7 +697,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 156067417}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: -39.43}
+  m_LocalPosition: {x: 0, y: 1.89, z: -39.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 519420032}
@@ -2156,7 +2156,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 459869645}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.01, z: 0}
+  m_LocalPosition: {x: 0, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1704374230}
@@ -6533,7 +6533,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1324462207}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -5.892, z: 0}
+  m_LocalPosition: {x: 0, y: -5.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1704374230}
@@ -10236,7 +10236,7 @@ PrefabInstance:
     - target: {fileID: 589770455774883729, guid: 66ba42ad892f30d44ac98ac950834b41,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5
+      value: 0.775
       objectReference: {fileID: 0}
     - target: {fileID: 589770455774883729, guid: 66ba42ad892f30d44ac98ac950834b41,
         type: 3}
