@@ -17,6 +17,9 @@ public class EnemyAI : MonoBehaviour
     private Seeker seeker;
     private Rigidbody2D rb;
 
+    // Enemy Graphics
+    public Transform enemyGFX;
+
     //The calculated path
     public Path path;
 
@@ -143,6 +146,15 @@ public class EnemyAI : MonoBehaviour
         {
             currentWaypoint++;
             return;
+        }
+
+        if (dir.x >= 0.01f)
+        {
+            enemyGFX.localScale = new Vector3(.25f, .25f, .25f);
+        }
+        else if (dir.x <= -0.01f)
+        {
+            enemyGFX.localScale = new Vector3(-.25f, .25f, .25f);
         }
     }
 }
