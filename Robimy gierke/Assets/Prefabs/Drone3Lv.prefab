@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 1587712963202481901}
   - component: {fileID: 1587712963202481891}
   m_Layer: 0
-  m_Name: AlienSpaceship
+  m_Name: Drone3Lv
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -302,8 +302,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   czerwony: {fileID: 0}
   stats:
-    maxHealth: 350
-    damage: 40
+    maxHealth: 200
+    damage: 45
   deathParticles: {fileID: 5778225806220736475, guid: 2e4fdc58ab118bd48a25ce3ce3628da0,
     type: 3}
   loot: {fileID: 8940363362117798497, guid: 96c3ea1ead2fa8b42bb1f66038c296dc, type: 3}
@@ -577,7 +577,7 @@ Animator:
   m_GameObject: {fileID: 8964664049496781808}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 660f7774814cdbb4fa504ad0b11b18e7, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5feecb8fe828a37448b2bc7bc60f0de6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -624,7 +624,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6ac0690c8291f044fa6558bda6905e88, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9ba2c7b249fbbf84fb5898b9abcb6d3e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -8,15 +8,15 @@ public class WaveSpawner : MonoBehaviour
     public enum SpawnState { SPAWNING, WAITING, COUNTING }
 
     [System.Serializable]
-    public class Wave
+    public class _wave
     {
         public string name;
-        public Transform enemy;
+        public Transform[] enemy;
         public int count;
         public float rate;
     }
 
-    public Wave[] waves;
+    public _wave[] waves;
     private int nextWave = 0;
     public int NextWave
     {
@@ -116,7 +116,7 @@ public class WaveSpawner : MonoBehaviour
     [SerializeField]
     Text waveNameText;
 
-    IEnumerator SpawnWave (Wave _wave)
+    IEnumerator SpawnWave (_wave _wave)
     {
         // Odwolanie do WaveUI?
         waveNameText.text = _wave.name;
@@ -126,7 +126,7 @@ public class WaveSpawner : MonoBehaviour
 
         for (int i = 0; i < _wave.count; i++)
         {
-            SpawnEnemy(_wave.enemy);
+            SpawnEnemy(_wave.enemy[Random.Range(0, _wave.enemy.Length)]);
             yield return new WaitForSeconds(1f / _wave.rate);
         }
 
