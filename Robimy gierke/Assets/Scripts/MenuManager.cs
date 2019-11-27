@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MenuManager : MonoBehaviour
+public class MenuManager : ExtendedBehaviour
 {
     [SerializeField]
     string hoverOverSound = "ButtonHover";
@@ -19,7 +19,11 @@ public class MenuManager : MonoBehaviour
             Debug.LogError("No audiomanager found!");
         }
 
-        audioManager.PlaySound("CalmMusic");
+        Wait(.5f, () => {
+            Debug.Log(".5 second is lost forever");
+            audioManager.PlaySound("CalmMusic");
+        });
+        
     }
 
     public void StartGame()

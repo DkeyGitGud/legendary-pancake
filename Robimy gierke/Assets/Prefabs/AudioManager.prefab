@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 615169329369708115}
   - component: {fileID: 6730537335874809416}
+  - component: {fileID: 1461909797032963386}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -141,11 +142,23 @@ MonoBehaviour:
     pitch: 1
     randomVolume: 0
     randomPitch: 0
-    loop: 0
+    loop: 1
   - name: EpicMusic
     clip: {fileID: 8300000, guid: 7fe066bdf49cc9c4c814f33c67977822, type: 3}
     volume: 0.35
     pitch: 1
     randomVolume: 0
     randomPitch: 0
-    loop: 0
+    loop: 1
+--- !u!114 &1461909797032963386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4080709009069212997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a64477d87ed724b48bef0a49fa70bcfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
