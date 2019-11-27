@@ -16,7 +16,7 @@ public class OutroManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             Debug.Log("WYCHODZIMY DO CREDITSOW");
             audioManager.StopSound("FightingMusic");
